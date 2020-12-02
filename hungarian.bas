@@ -17,11 +17,9 @@ Sub main()
     
     Dim min As Integer 'minimum value
     
+    'Define dimension of the quadratic matrix by using a cell in your worksheet
     N = Cells(2, 1).Value - 1
-    If N = 0 Or N < 0 Then
-        MsgBox "Bitte drücken Sie zuerst auf den ersten Button, damit das Verfahren die Matrix korrekt einliest"
-        Exit Sub
-    End If
+    
     
     ReDim C(N, N) As Double
     ReDim A(N, N) As Integer
